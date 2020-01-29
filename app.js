@@ -9,9 +9,9 @@ function pickRock(){
   let randoChoice = Math.floor(Math.random() * computerChoice.length)
   if (playerchoice[0] == computerChoice[randoChoice]) { 
     console.log("Tie")
-  
+  console.log(randoChoice)
   } 
-  else if(playerchoice[0] == computerChoice[randoChoice]){
+  else if(playerchoice[1] == computerChoice[randoChoice]){
     console.log("Lose")
   } else {
     console.log("You Win")
@@ -21,7 +21,7 @@ function pickRock(){
 
 function pickPaper(){
   let randoChoice = Math.floor(Math.random() * computerChoice.length)
- if (playerchoice[1] == computerChoice[randoChoice]) { 
+ if (playerchoice[0] == computerChoice[randoChoice]) { 
     console.log("You win")
 
     
