@@ -24,16 +24,16 @@
     // NOTE
 <div class="container">
   <div class="row">
-    <div class="col-12 text-center"><h2>Score</h2></div>
-  </div>
+   <div class="col-6">Player Score</div>
+   <div class="col-6">Comp Score</div>
 </div>
 <hr>
     <main>
       <div class="container">
         <div class="row text-center">
-          <div id="btnRock" class="col-4"><button type="button" class="btn btn-primary">Rock</button></div>
-          <div id="btnPaper" class="col-4"><button type="button" class="btn btn-primary">Paper</button></div>
-          <div id="btnScissors" class="col-4"><button type="button" class="btn btn-primary">Scissors</button></div>
+          <div  class="col-4"><button id="btnRock" onclick="pickRock()" type="button" class="btn btn-primary">Rock</button></div>
+          <div  class="col-4"><button id="btnPaper" onclick="pickPaper()" type="button" class="btn btn-primary">Paper</button></div>
+          <div class="col-4"><button id="btnScissors" onclick="pickScissors()" type="button" class="btn btn-primary">Scissors</button></div>
         </div>
       </div>
       <hr>
