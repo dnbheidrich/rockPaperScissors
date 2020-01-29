@@ -25,4 +25,12 @@ function pickScissors(){
 function compChoice(){
 Math.floor(Math.random() * choice.length)
 }
+function drawGame() {
+  
+  document.getElementById("btnRock");
+  document.getElementById("btnPaper");
+  document.getElementById("btnScissors")
+ 
+  drawGame()
+}
 
