@@ -12,6 +12,8 @@ let scissorElem = document.getElementById("s");
 let gameResultElem = document.getElementById("game-winner");
 
 
+
+
 function win(){
 
 gameResultElem.innerText = "You Win!"
