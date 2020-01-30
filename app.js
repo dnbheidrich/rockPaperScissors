@@ -23,7 +23,7 @@ gameResultElem.innerText = "You Win!"
 
 function lose(){
   compScore++
-  compScoreBoardElem.innerText = playerScore
+  compScoreBoardElem.innerText = compScore
   gameResultElem.innerText = "You Lose!"
   
   
