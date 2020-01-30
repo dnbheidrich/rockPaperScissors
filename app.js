@@ -15,12 +15,15 @@ let gameResultElem = document.getElementById("game-winner");
 
 
 function win(){
-
+  playerScore ++
+playerScoreBoardElem.innerHTML = playerScore
 gameResultElem.innerText = "You Win!"
 }
 
 
 function lose(){
+  compScore++
+  compScoreBoardElem.innerText = playerScore
   gameResultElem.innerText = "You Lose!"
   
   
