@@ -5,7 +5,7 @@ let playerScore = 0;
 let compScore = 0;
 
 let compScoreBoardElem= document.getElementById("c-Score");
-var playerScoreBoardElem = document.getElementById("p-Score");
+let playerScoreBoardElem = document.getElementById("p-Score");
 let rockElem = document.getElementById("r");
 let paperElem = document.getElementById("p");
 let scissorElem = document.getElementById("s");
@@ -13,6 +13,7 @@ let gameResultElem = document.getElementById("game-winner");
 
 
 function win(){
+
 gameResultElem.innerText = "You Win!"
 }
 
