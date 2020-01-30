@@ -43,7 +43,7 @@ function getCompChoice(){
   return choices[randoNumber]
 }
 
-
+// Why does playerChoice go inside param
 function game(playerChoice){
 let compChoice = getCompChoice();
 switch(playerChoice + compChoice){
