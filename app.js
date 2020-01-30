@@ -5,11 +5,29 @@ let playerScore = 0;
 let compScore = 0;
 
 let compScoreBoardElem= document.getElementById("c-Score");
-let playerScoreBoardElem = document.getElementById("p-Score");
+var playerScoreBoardElem = document.getElementById("p-Score");
 let rockElem = document.getElementById("r");
 let paperElem = document.getElementById("p");
 let scissorElem = document.getElementById("s");
 let gameResultElem = document.getElementById("game-winner");
+
+
+function win(){
+gameResultElem.innerText = "You Win!"
+}
+
+
+function lose(){
+  gameResultElem.innerText = "You Lose!"
+  
+  
+}
+
+
+function tie(){
+  gameResultElem.innerText = "Tie"
+  
+}
 
 
 function getCompChoice(){
@@ -21,18 +39,28 @@ function getCompChoice(){
 
 
 function game(playerChoice){
-let rockElem = document.getElementById("r");
-let paperElem = document.getElementById("p");
-let scissorElem = document.getElementById("s");
+let compChoice = getCompChoice();
+switch(playerChoice + compChoice){
+  case "rs":
+  case "pr":
+  case "sp":
+  win()
+  break;
+  case "sr":
+  case "rp":
+  case "ps":
+  lose()
+  break;
+  case "rr":
+  case "pp":
+  case "ss":
+  tie()
+  break;
 
 
-
-
-
+}
   
-  console.log(playerChoice)
-  console.log(getCompChoice)
-
+ 
 }
 
 
@@ -60,4 +88,3 @@ function scissorsBtn(){
 
 
 
-getCompChoice()
