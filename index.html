@@ -23,22 +23,22 @@
     </header>
 <div class="container-fluid">
   <div class="row text-center">
-   <div id= "pScore" class="col-6">Player Score</div>
-   <div id='cScore' class="col-6">Comp Score</div>
+   <div  class="col-6"><h3 id = "p-Score">Player Score</h3></div>
+   <div X class="col-6"><h3 id = "c-Score">Comp Score</h3></div>
 </div>
 <hr>
     <main>
       <div class="container-fluid">
         <div class="row text-center">
-          <div  class="col-4"><button id="btnRock" onclick="pickRock()" type="button" class="btn btn-primary">Rock</button></div>
-          <div  class="col-4"><button id="btnPaper" onclick="pickPaper()" type="button" class="btn btn-primary">Paper</button></div>
-          <div class="col-4"><button id="btnScissors" onclick="pickScissors()" type="button" class="btn btn-primary">Scissors</button></div>
+          <div  class="col-4"><button id="r" onclick="rockBtn()" type="button" class="btn btn-primary">Rock</button></div>
+          <div  class="col-4"><button id="p" onclick="paperBtn()" type="button" class="btn btn-primary">Paper</button></div>
+          <div class="col-4"><button id="s" onclick="scissorsBtn()" type="button" class="btn btn-primary">Scissors</button></div>
         </div>
       </div>
       <hr>
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="col-12"><h4>Winner!</h4></div>
+          <div id = "game-winner" class="col-12"><h4>Winner!</h4></div>
         </div>
       </div>
     </main>
@@ -53,11 +53,7 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
     <script src="app.js"></script>
   </body>
 </html>

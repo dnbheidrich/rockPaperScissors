@@ -1,47 +1,38 @@
 
-let computerChoice = ["Rock", "Paper", "Scissors"]
-let playerchoice = ["Rock", "Paper", "Scissors"]
-let rockElem = document.getElementById("btnRock")
-let paperElem = document.getElementById("btnPaper")
-let scissorElem = document.getElementById("btnScissors")
 
-function pickRock(){
-  let randoChoice = Math.floor(Math.random() * computerChoice.length)
-  if (playerchoice[0] == computerChoice[randoChoice]) { 
-    console.log("Tie")
-  console.log(randoChoice)
-  } 
-  else if(playerchoice[1] == computerChoice[randoChoice]){
-    console.log("Lose")
-  } else {
-    console.log("You Win")
-  }
-  }
+
+let playerScore = 0;
+let compScore = 0;
+
+let compScoreBoardElem= document.getElementById("c-Score");
+let playerScoreBoardElem = document.getElementById("p-Score");
+let rockElem = document.getElementById("r");
+let paperElem = document.getElementById("p");
+let scissorElem = document.getElementById("s");
+let gameResultElem = document.getElementById("game-winner");
+
+
+function getCompChoice(){
+  let choices = ["r","p","s"];
+  let randoNumber = Math.floor(Math.random()*3)
+  console.log(randoNumber)
+  return choices[randoNumber]
+}
+
+
+function game(playerChoice){
+let rockElem = document.getElementById("r");
+let paperElem = document.getElementById("p");
+let scissorElem = document.getElementById("s");
+
+
+
+
+
   
+  console.log(playerChoice)
+  console.log(getCompChoice)
 
-function pickPaper(){
-  let randoChoice = Math.floor(Math.random() * computerChoice.length)
- if (playerchoice[0] == computerChoice[randoChoice]) { 
-    console.log("You win")
-
-    
-  } else if(playerchoice[1] == computerChoice[randoChoice]){
-    console.log("Tie")
-  } else {
-    console.log("You Lose")
-  }
-}
-function pickScissors(){
-  let randoChoice = Math.floor(Math.random() * computerChoice.length)
-  if (playerchoice[2] == computerChoice[randoChoice]) { 
-    console.log("You Lose")
-    debugger
-    
-  } else if(playerchoice[2] == computerChoice[randoChoice]){
-    console.log("You Win")
-  } else {
-    console.log("Tie")
-  } 
 }
 
 
@@ -50,9 +41,23 @@ function pickScissors(){
 
 
 
+function rockBtn(){
+
+game('r')
+}
+
+
+function paperBtn(){
+  
+  game('p')
+}
+
+function scissorsBtn(){
+  
+  game('s')
+}
 
 
 
 
-
-
+getCompChoice()
